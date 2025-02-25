@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Work</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!--NAV BAR-->
+    <nav>
+        <ul class="mobile-bar">
+            <li onclick=HideSideBar()><a><svg xmlns="http://www.w3.org/2000/svg" height="34" viewBox="0 -960 960 960"
+                        width="34" fill="white">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg></a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">My Work</a></li>
+            <li><a href="#">Contact</a></li>
+
+        </ul>
+
+        <ul>
+            <!--<li><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" height="36" viewBox="0 -960 960 960" width="36" fill="white"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg></a></li>-->
+            <li><a href="index.html" class="logo"><img src="images/logo.png" height="60" viewBox="0 -960 960 960"
+                        width="60"></a></li>
+            <li class="hideOnMobile"><a href="#">About</a></li>
+            <li class="hideOnMobile"><a href="#">Resume</a></li>
+            <li class="hideOnMobile"><a href="#">My Work</a></li>
+            <li class="hideOnMobile"><a href="#">Contact</a></li>
+            <li class="menu-button" onclick=ShowSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                        height="34" viewBox="0 -960 960 960" width="34" fill="white">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></a></li>
+        </ul>
+    </nav>
+
+    <!--BODY-->
+    <!--MAIN-->
+    <main>
+        <!--HEADING-->
+        <section id="heading">
+            <h1>My Work</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, in odio! Possimus. Lorem ipsum dolor
+                sit
+                amet
+                consectetur adipisicing elit. Quas, soluta?</p>
+        </section>
+        <!--FIRST PROJECT-->
+        <section id="flora-fauna">
+            <h2>Flora Fauna</h2>
+            <img class="img-fluid" src="images/Flora-Fauna.png" alt="photo of Flora Fauna homepage">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nisi hic, necessitatibus fuga
+                asperiores
+                sed molestias nostrum. Ullam mollitia qui obcaecati eaque eveniet odio officia doloremque adipisci
+                modi
+                consequuntur alias, pariatur veniam. Minus voluptate aliquid ab, numquam eum quidem. Quibusdam.</p>
+        </section>
+        <!--SECOND PROJECT-->
+        <section id="roots">
+            <h2>Roots</h2>
+            <img class="img-fluid" src="images/Roots.png" alt="photo of Roots app pages">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nisi hic, necessitatibus fuga
+                asperiores
+                sed molestias nostrum. Ullam mollitia qui obcaecati eaque eveniet odio officia doloremque adipisci
+                modi
+                consequuntur alias, pariatur veniam. Minus voluptate aliquid ab, numquam eum quidem. Quibusdam.</p>
+        </section>
+        <!--CHECK MY PROJECTS LINK-->
+        <section id="current-projects">
+            <a href="#">Check out my current projects!</a>
+        </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+        <section id="contacts">
+            <p><a href="mailto:kamucha@my.waketech.edu">kamucha@my.waketech.edu</a></p>
+            <p><a href="tel:1234567890">123-456-7890</a></p>
+        </section>
+        <section id="socials">
+            <a class="p-4"
+                href="https://www.linkedin.com/in/kennedy-amucha-1257ab294?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BZ1ZOts%2BdR0%2BnE5miVesEeQ%3D%3D">
+                <img src="images/linked-in.png">
+            </a>
+        </section>
+    </footer>
+
+    <script>
+
+        function ShowSideBar() {
+            const mobilebar = document.querySelector('.mobile-bar')
+            mobilebar.style.display = "flex"
+        }
+
+        function HideSideBar() {
+            const mobilebar = document.querySelector('.mobile-bar')
+            mobilebar.style.display = "none"
+        }
+
+    </script>
+
+</body>
+
+</html>
